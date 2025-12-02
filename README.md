@@ -158,15 +158,8 @@ weather-app/
 
 ## 🧰 Setup Instructions
 
-1. Clone the repo  
-2. Add your **OpenWeatherMap API key** inside `app.js`:
-
-```js
-const apiKey = "YOUR_KEY_HERE";
-```
-
-3. Open `index.html` in your browser  
-4. Or deploy via GitHub Pages  
+1. Open `index.html` in your browser  
+2. Or deploy via GitHub Pages  
 
 ---
 
