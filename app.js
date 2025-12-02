@@ -18,22 +18,56 @@ searchBtn.addEventListener("click", searchWeather);
 // Search handler
 function searchWeather() {
     const city = cityInput.value.trim();
-    if (city !== "") {
-        loading.classList.remove("hidden");
-        weatherResult.innerHTML = "";
-        forecastContainer.innerHTML = "";
-        getWeather(city);
-        getForecast(city);
+    const errorBox = document.getElementById("error-message");
+
+    // Reset message + shake
+    errorBox.innerHTML = "";
+    cityInput.classList.remove("shake");
+
+    // If empty input
+    if (city === "") {
+        errorBox.innerHTML = "⚠️ Please enter a city name.";
+        cityInput.classList.add("shake");
+        return;
     }
+
+    loading.classList.remove("hidden");
+    weatherResult.innerHTML = "";
+    forecastContainer.innerHTML = "";
+
+    getWeather(city);
+    getForecast(city);
 }
+
 
 // Fetch current weather
 function getWeather(city) {
+    const errorBox = document.getElementById("error-message");
+
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
         .then(res => res.json())
-        .then(data => displayWeather(data))
-        .catch(() => (weatherResult.innerHTML = "<p>Error fetching weather data.</p>"));
+        .then(data => {
+
+            // Invalid city → show error box
+            if (data.cod == "404") {
+                loading.classList.add("hidden");
+                errorBox.textContent = "❌ City not found. Try again.";
+                weatherResult.innerHTML = "";
+                forecastContainer.innerHTML = "";
+                return;
+            }
+
+            // Clear old errors
+            errorBox.textContent = "";
+
+            displayWeather(data);
+        })
+        .catch(() => {
+            loading.classList.add("hidden");
+            errorBox.textContent = "⚠️ Error fetching weather data.";
+        });
 }
+
 
 // Display weather + background
 function displayWeather(data) {
