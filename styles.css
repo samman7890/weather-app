@@ -1,0 +1,169 @@
+/* GLOBAL */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.8s ease-in-out;
+}
+
+/* Default background */
+body.default-bg {
+    background: linear-gradient(to bottom right, #d1e8ff, #eef6fc);
+}
+
+/* Weather backgrounds */
+body.sunny-bg {
+    background: linear-gradient(to bottom right, #ffcc66, #ffe9b2);
+}
+
+body.cloudy-bg {
+    background: linear-gradient(to bottom right, #b7c0d8, #e2e5ed);
+}
+
+body.rain-bg {
+    background: linear-gradient(to bottom right, #5a79a5, #a3bcd4);
+}
+
+body.snow-bg {
+    background: linear-gradient(to bottom right, #e0f7ff, #ffffff);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #444;
+}
+
+/* SEARCH BAR */
+#search-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 12px;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    font-size: 17px;
+}
+
+#searchBtn {
+    margin-left: 10px;
+    padding: 12px 18px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#searchBtn:hover {
+    background-color: #005c9a;
+}
+
+/* LOADING */
+#loading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* CARD STYLING */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+
+/* CENTER CURRENT WEATHER SECTION */
+#weather-section h2 {
+    text-align: center;
+}
+
+#weather-result {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* CENTER 5-DAY FORECAST TITLE */
+#forecast-section h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* CENTER FORECAST GRID */
+#forecast-container {
+    max-width: 1100px;
+    margin: 20px auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* FORECAST CARD */
+.forecast-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ICONS */
+.forecast-card img,
+.card img {
+    width: 75px;
+}
+
+/* ANIMATIONS */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 480px) {
+    #cityInput {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    #searchBtn {
+        width: 70%;
+        margin-top: 5px;
+    }
+}
