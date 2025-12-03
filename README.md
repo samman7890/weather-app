@@ -17,7 +17,7 @@ This project demonstrates **AJAX API calls**, clean UI rendering, and dynamic DO
 
 ## 🚀 Live Demo
 🔗 **GitHub Pages:** https://github.com/samman7890/weather-app 
-🎥 **Demo Video:** *Add your YouTube or Canvas link here*
+🎥 **Demo Video:** https://video.laurea.fi/media/weather%20app/0_92n56c2a
 
 ---
 
