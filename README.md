@@ -207,6 +207,24 @@ During this project, I learned:
 
 ---
 
+## 🧩 Self-Assessment
+
+In this project, I successfully implemented a fully functional Weather Forecast Application using HTML, CSS, JavaScript, and the OpenWeatherMap API. I was able to meet all core requirements of the assignment, including making live API requests, handling JSON responses, updating the DOM dynamically, and providing both current weather data and a 5-day forecast.
+
+I paid special attention to user experience by adding:
+- Input validation and clear error messages
+- Loading indicators
+- Dynamic background changes based on weather conditions
+- Responsive layout and clean visual presentation
+
+One of the main challenges was converting the forecast timestamps into the correct local dates, but I solved this by applying the timezone offset provided by the API. This improved the accuracy and reliability of the forecast section.
+
+I also learned how to structure a small front-end project cleanly, use fetch() with proper error handling, and deploy the application using GitHub Pages. The demo video allowed me to clearly communicate the architecture, logic, and user flow of the app.
+
+Overall, I am satisfied with the final result. The project works smoothly from the live URL, handles edge cases, has a clean UI, and demonstrates my understanding of AJAX, asynchronous JavaScript, and API integration. If I had more time, I would add features like temperature unit toggling (°C/°F) and user geolocation for automatic weather detection.
+
+---
+
 ## 👤 Author  
 **Samman Upadhyay**  
 Weather data provided by **OpenWeatherMap**.
