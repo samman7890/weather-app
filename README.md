@@ -169,6 +169,24 @@ weather-app/
 
 ---
 
+## 📸 Screenshots
+
+Below are some example screenshots of the Weather Forecast App.
+
+### 🏠 Home Screen (Before Search)
+<img width="1439" height="812" alt="Screenshot 2025-12-03 at 23 07 41" src="https://github.com/user-attachments/assets/b70ccfc8-6d66-4faa-96c5-c5da1075aa4b" />
+
+
+### 🔍 Search Results — Current Weather
+<img width="1439" height="816" alt="Screenshot 2025-12-03 at 23 08 18" src="https://github.com/user-attachments/assets/0d0fe998-f340-43b9-b430-1153b2bbf227" />
+
+
+### 📅 5-Day Forecast
+<img width="1439" height="813" alt="Screenshot 2025-12-03 at 23 08 38" src="https://github.com/user-attachments/assets/c4b025e5-d271-4519-92c4-53f9bdeeeeec" />
+
+
+---
+
 ## 🎓 Learning Outcomes  
 During this project, I learned:
 
