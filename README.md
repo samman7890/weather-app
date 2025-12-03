@@ -18,6 +18,7 @@ This project demonstrates **AJAX API calls**, clean UI rendering, and dynamic DO
 ## 🚀 Live Demo
 🔗 **GitHub Pages:** https://github.com/samman7890/weather-app 
 🎥 **Demo Video:** https://video.laurea.fi/media/weather%20app/0_92n56c2a
+**Live Link:** https://samman7890.github.io/weather-app/
 
 ---
 
@@ -159,10 +160,12 @@ weather-app/
 ## 🧰 Setup Instructions
 
 1. Clone the repository
-git clone https://github.com/samman7890/weather-app.git
-cd weather-app
-2. Open `index.html` in your browser  
-3. live link:  
+   git clone https://github.com/samman7890/weather-app.git
+   cd weather-app
+2. Add your OpenWeatherMap API key inside app.js
+   const apiKey = "YOUR_KEY_HERE";
+3. Open `index.html` in your browser 
+4. live link:  https://samman7890.github.io/weather-app/
 
 ---
 
