@@ -158,8 +158,11 @@ weather-app/
 
 ## 🧰 Setup Instructions
 
-1. Open `index.html` in your browser  
-2. Or deploy via GitHub Pages  
+1. Clone the repository
+git clone https://github.com/samman7890/weather-app.git
+cd weather-app
+2. Open `index.html` in your browser  
+3. live link:  
 
 ---
 
